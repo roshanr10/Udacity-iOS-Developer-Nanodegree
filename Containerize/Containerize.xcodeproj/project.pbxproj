@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		51F829631CF6450800906D02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F829621CF6450800906D02 /* AppDelegate.swift */; };
+		51F8296A1CF6450800906D02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F829681CF6450800906D02 /* Main.storyboard */; };
+		51F8296C1CF6450800906D02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51F8296B1CF6450800906D02 /* Assets.xcassets */; };
+		51F8296F1CF6450800906D02 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51F8296D1CF6450800906D02 /* Launch Screen.storyboard */; };
+		51F8297F1CF6469200906D02 /* Docker API Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F8297E1CF6469200906D02 /* Docker API Client.swift */; };
+		51F829861CF64A5300906D02 /* Docker Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F829851CF64A5300906D02 /* Docker Client.swift */; };
+		51F829881CF6549800906D02 /* ConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F829871CF6549800906D02 /* ConnectionViewController.swift */; };
+		51F8298C1CF6993900906D02 /* Docker Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F8298B1CF6993900906D02 /* Docker Constants.swift */; };
+		51F8298F1CF69C4900906D02 /* JSON Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F8298E1CF69C4900906D02 /* JSON Client.swift */; };
+		51F829921CF6A8A200906D02 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 51F829901CF6A8A200906D02 /* Model.xcdatamodeld */; };
+		51F8299C1CF6AA3A00906D02 /* Info+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F829941CF6AA3A00906D02 /* Info+CoreDataProperties.swift */; };
+		51F8299D1CF6AA3A00906D02 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F829951CF6AA3A00906D02 /* Info.swift */; };
+		51F8299E1CF6AA3A00906D02 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F829961CF6AA3A00906D02 /* Image+CoreDataProperties.swift */; };
+		51F8299F1CF6AA3A00906D02 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F829971CF6AA3A00906D02 /* Image.swift */; };
+		51F829A01CF6AA3A00906D02 /* Volume+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F829981CF6AA3A00906D02 /* Volume+CoreDataProperties.swift */; };
+		51F829A11CF6AA3A00906D02 /* Volume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F829991CF6AA3A00906D02 /* Volume.swift */; };
+		51F829A21CF6AA3A00906D02 /* Container+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F8299A1CF6AA3A00906D02 /* Container+CoreDataProperties.swift */; };
+		51F829A31CF6AA3A00906D02 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F8299B1CF6AA3A00906D02 /* Container.swift */; };
+		51F829AB1CF6AA8B00906D02 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F829AA1CF6AA8B00906D02 /* CoreDataStack.swift */; };
+		51F829B11CF7FBB200906D02 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F829B01CF7FBB200906D02 /* InfoViewController.swift */; };
+		51F829B31CF928F600906D02 /* VolumesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F829B21CF928F500906D02 /* VolumesViewController.swift */; };
+		51F829B51CF92E0A00906D02 /* ContainersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F829B41CF92E0A00906D02 /* ContainersViewController.swift */; };
+		51F829B71CF92E2600906D02 /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F829B61CF92E2600906D02 /* ImagesViewController.swift */; };
+		51F829B91CFA874A00906D02 /* ContainerInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F829B81CFA874A00906D02 /* ContainerInfoViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		51F8295F1CF6450800906D02 /* Containerize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Containerize.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		51F829621CF6450800906D02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		51F829691CF6450800906D02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		51F8296B1CF6450800906D02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		51F8296E1CF6450800906D02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		51F829701CF6450800906D02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51F8297E1CF6469200906D02 /* Docker API Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Docker API Client.swift"; sourceTree = "<group>"; };
+		51F829851CF64A5300906D02 /* Docker Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Docker Client.swift"; sourceTree = "<group>"; };
+		51F829871CF6549800906D02 /* ConnectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionViewController.swift; sourceTree = "<group>"; };
+		51F8298B1CF6993900906D02 /* Docker Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Docker Constants.swift"; sourceTree = "<group>"; };
+		51F8298E1CF69C4900906D02 /* JSON Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSON Client.swift"; sourceTree = "<group>"; };
+		51F829911CF6A8A200906D02 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		51F829941CF6AA3A00906D02 /* Info+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Info+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		51F829951CF6AA3A00906D02 /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		51F829961CF6AA3A00906D02 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		51F829971CF6AA3A00906D02 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		51F829981CF6AA3A00906D02 /* Volume+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Volume+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		51F829991CF6AA3A00906D02 /* Volume.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Volume.swift; sourceTree = "<group>"; };
+		51F8299A1CF6AA3A00906D02 /* Container+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Container+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		51F8299B1CF6AA3A00906D02 /* Container.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		51F829AA1CF6AA8B00906D02 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		51F829B01CF7FBB200906D02 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		51F829B21CF928F500906D02 /* VolumesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolumesViewController.swift; sourceTree = "<group>"; };
+		51F829B41CF92E0A00906D02 /* ContainersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainersViewController.swift; sourceTree = "<group>"; };
+		51F829B61CF92E2600906D02 /* ImagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
+		51F829B81CFA874A00906D02 /* ContainerInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerInfoViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		51F8295C1CF6450800906D02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		51F829561CF6450800906D02 = {
+			isa = PBXGroup;
+			children = (
+				51F829611CF6450800906D02 /* Containerize */,
+				51F829601CF6450800906D02 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		51F829601CF6450800906D02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				51F8295F1CF6450800906D02 /* Containerize.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		51F829611CF6450800906D02 /* Containerize */ = {
+			isa = PBXGroup;
+			children = (
+				51F829621CF6450800906D02 /* AppDelegate.swift */,
+				51F829761CF6453900906D02 /* Model */,
+				51F8297A1CF6458700906D02 /* Controller */,
+				51F829771CF6455F00906D02 /* Assets */,
+				51F829781CF6456800906D02 /* Supporting Files */,
+			);
+			path = Containerize;
+			sourceTree = "<group>";
+		};
+		51F829761CF6453900906D02 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				51F829931CF6AA2400906D02 /* CoreData */,
+				51F8298D1CF69C3900906D02 /* JSON Client */,
+				51F829821CF64A0F00906D02 /* Docker Client */,
+				51F8297D1CF6466000906D02 /* Docker API */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		51F829771CF6455F00906D02 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				51F8297C1CF6459E00906D02 /* Storyboards */,
+				51F8297B1CF6459100906D02 /* Images */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		51F829781CF6456800906D02 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				51F829701CF6450800906D02 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		51F8297A1CF6458700906D02 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				51F829871CF6549800906D02 /* ConnectionViewController.swift */,
+				51F829B41CF92E0A00906D02 /* ContainersViewController.swift */,
+				51F829B61CF92E2600906D02 /* ImagesViewController.swift */,
+				51F829B21CF928F500906D02 /* VolumesViewController.swift */,
+				51F829B01CF7FBB200906D02 /* InfoViewController.swift */,
+				51F829B81CFA874A00906D02 /* ContainerInfoViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		51F8297B1CF6459100906D02 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				51F8296B1CF6450800906D02 /* Assets.xcassets */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		51F8297C1CF6459E00906D02 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				51F829681CF6450800906D02 /* Main.storyboard */,
+				51F8296D1CF6450800906D02 /* Launch Screen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		51F8297D1CF6466000906D02 /* Docker API */ = {
+			isa = PBXGroup;
+			children = (
+				51F8297E1CF6469200906D02 /* Docker API Client.swift */,
+				51F8298B1CF6993900906D02 /* Docker Constants.swift */,
+			);
+			name = "Docker API";
+			sourceTree = "<group>";
+		};
+		51F829821CF64A0F00906D02 /* Docker Client */ = {
+			isa = PBXGroup;
+			children = (
+				51F829851CF64A5300906D02 /* Docker Client.swift */,
+			);
+			name = "Docker Client";
+			sourceTree = "<group>";
+		};
+		51F8298D1CF69C3900906D02 /* JSON Client */ = {
+			isa = PBXGroup;
+			children = (
+				51F8298E1CF69C4900906D02 /* JSON Client.swift */,
+			);
+			name = "JSON Client";
+			sourceTree = "<group>";
+		};
+		51F829931CF6AA2400906D02 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				51F829A91CF6AA6900906D02 /* Entities */,
+				51F829901CF6A8A200906D02 /* Model.xcdatamodeld */,
+				51F829AA1CF6AA8B00906D02 /* CoreDataStack.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		51F829A41CF6AA4500906D02 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				51F8299A1CF6AA3A00906D02 /* Container+CoreDataProperties.swift */,
+				51F8299B1CF6AA3A00906D02 /* Container.swift */,
+			);
+			name = Container;
+			sourceTree = "<group>";
+		};
+		51F829A51CF6AA4C00906D02 /* Volume */ = {
+			isa = PBXGroup;
+			children = (
+				51F829981CF6AA3A00906D02 /* Volume+CoreDataProperties.swift */,
+				51F829991CF6AA3A00906D02 /* Volume.swift */,
+			);
+			name = Volume;
+			sourceTree = "<group>";
+		};
+		51F829A61CF6AA5100906D02 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				51F829961CF6AA3A00906D02 /* Image+CoreDataProperties.swift */,
+				51F829971CF6AA3A00906D02 /* Image.swift */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		51F829A71CF6AA5900906D02 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				51F829941CF6AA3A00906D02 /* Info+CoreDataProperties.swift */,
+				51F829951CF6AA3A00906D02 /* Info.swift */,
+			);
+			name = Info;
+			sourceTree = "<group>";
+		};
+		51F829A91CF6AA6900906D02 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				51F829A71CF6AA5900906D02 /* Info */,
+				51F829A61CF6AA5100906D02 /* Image */,
+				51F829A51CF6AA4C00906D02 /* Volume */,
+				51F829A41CF6AA4500906D02 /* Container */,
+			);
+			name = Entities;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		51F8295E1CF6450800906D02 /* Containerize */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51F829731CF6450800906D02 /* Build configuration list for PBXNativeTarget "Containerize" */;
+			buildPhases = (
+				51F8295B1CF6450800906D02 /* Sources */,
+				51F8295C1CF6450800906D02 /* Frameworks */,
+				51F8295D1CF6450800906D02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Containerize;
+			productName = Containerize;
+			productReference = 51F8295F1CF6450800906D02 /* Containerize.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		51F829571CF6450800906D02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Roshan Ravi";
+				TargetAttributes = {
+					51F8295E1CF6450800906D02 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = XYVQ63GG7X;
+					};
+				};
+			};
+			buildConfigurationList = 51F8295A1CF6450800906D02 /* Build configuration list for PBXProject "Containerize" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 51F829561CF6450800906D02;
+			productRefGroup = 51F829601CF6450800906D02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				51F8295E1CF6450800906D02 /* Containerize */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		51F8295D1CF6450800906D02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51F8296F1CF6450800906D02 /* Launch Screen.storyboard in Resources */,
+				51F8296C1CF6450800906D02 /* Assets.xcassets in Resources */,
+				51F8296A1CF6450800906D02 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		51F8295B1CF6450800906D02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51F8298F1CF69C4900906D02 /* JSON Client.swift in Sources */,
+				51F8299E1CF6AA3A00906D02 /* Image+CoreDataProperties.swift in Sources */,
+				51F829861CF64A5300906D02 /* Docker Client.swift in Sources */,
+				51F829881CF6549800906D02 /* ConnectionViewController.swift in Sources */,
+				51F8299D1CF6AA3A00906D02 /* Info.swift in Sources */,
+				51F829921CF6A8A200906D02 /* Model.xcdatamodeld in Sources */,
+				51F8297F1CF6469200906D02 /* Docker API Client.swift in Sources */,
+				51F829B51CF92E0A00906D02 /* ContainersViewController.swift in Sources */,
+				51F829AB1CF6AA8B00906D02 /* CoreDataStack.swift in Sources */,
+				51F829B11CF7FBB200906D02 /* InfoViewController.swift in Sources */,
+				51F829B71CF92E2600906D02 /* ImagesViewController.swift in Sources */,
+				51F829A31CF6AA3A00906D02 /* Container.swift in Sources */,
+				51F829A11CF6AA3A00906D02 /* Volume.swift in Sources */,
+				51F8298C1CF6993900906D02 /* Docker Constants.swift in Sources */,
+				51F829631CF6450800906D02 /* AppDelegate.swift in Sources */,
+				51F829B91CFA874A00906D02 /* ContainerInfoViewController.swift in Sources */,
+				51F829A01CF6AA3A00906D02 /* Volume+CoreDataProperties.swift in Sources */,
+				51F829B31CF928F600906D02 /* VolumesViewController.swift in Sources */,
+				51F829A21CF6AA3A00906D02 /* Container+CoreDataProperties.swift in Sources */,
+				51F8299F1CF6AA3A00906D02 /* Image.swift in Sources */,
+				51F8299C1CF6AA3A00906D02 /* Info+CoreDataProperties.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		51F829681CF6450800906D02 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51F829691CF6450800906D02 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		51F8296D1CF6450800906D02 /* Launch Screen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				51F8296E1CF6450800906D02 /* Base */,
+			);
+			name = "Launch Screen.storyboard";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		51F829711CF6450800906D02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		51F829721CF6450800906D02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		51F829741CF6450800906D02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Containerize/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.roshanravi.Containerize;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		51F829751CF6450800906D02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Containerize/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.roshanravi.Containerize;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		51F8295A1CF6450800906D02 /* Build configuration list for PBXProject "Containerize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51F829711CF6450800906D02 /* Debug */,
+				51F829721CF6450800906D02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51F829731CF6450800906D02 /* Build configuration list for PBXNativeTarget "Containerize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				51F829741CF6450800906D02 /* Debug */,
+				51F829751CF6450800906D02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		51F829901CF6A8A200906D02 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				51F829911CF6A8A200906D02 /* Model.xcdatamodel */,
+			);
+			currentVersion = 51F829911CF6A8A200906D02 /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = ../Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 51F829571CF6450800906D02 /* Project object */;
+}
